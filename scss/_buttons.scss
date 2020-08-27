@@ -1,0 +1,88 @@
+button,button:hover,button:focus{
+	outline:none;
+&:focus{
+	box-shadow: none;
+}
+}
+.btn
+{
+    &-primary{
+		&:hover{
+		background-color: transparent;
+		color:map-get($theme-colors , "primary" )
+		}
+		
+	}
+	
+}
+.btn-equal{
+	width: 150px;
+}
+
+.btn-transparent{
+	background: none;
+	border:1px solid $dark-gray;
+	@include transition(0.3s);
+	&:hover,&:focus{
+	background-color:$dark-blue;
+	color:$white;
+	}
+}
+.btn-tertiary{
+	background: none;
+	//border:1px solid $blue;
+	@include transition(0.3s);
+	//background-color:$blue;
+	color:$white;
+	&:hover,&:focus{
+	background-color:transparent;
+	//color:$blue;
+}
+}
+
+.neumo{
+
+	font-size: 30px;
+    padding: 5px;
+    position: relative;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	z-index: 999;
+
+	span{
+		background-color: $white;
+		@include transition(0.3s);
+		width: 100%;
+		height: 100%;
+		padding: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $gray-2;
+		outline: none;
+		font-size:20px;
+	} 
+
+	&:after{
+		content:'';
+		position: absolute;
+		background-color: $dark-pink;
+		box-shadow: inset -5px -5px 10px darken($dark-pink, 8%),
+		inset 5px 5px 10px lighten($dark-pink, 20%);
+		width:100%;
+		height:100%;
+		top:0;
+		z-index: -1;
+		left:0;
+	}
+	&:hover span{
+		color:$white;
+		background-color: $dark-pink;
+	}
+}

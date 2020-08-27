@@ -1,0 +1,44 @@
+@mixin transition($time) {
+    transition: $time ease-in-out;
+    -webkit-transition: $time ease-in-out;
+    -moz-transition: $time ease-in-out;
+}  
+
+@mixin grid($cols,$mgn) {
+    margin-left: $mgn;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    flex:$cols;
+    margin:0 $mgn;
+    // &:nth-child(#{$cols}n){
+        
+    // }
+}
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:false) {
+    @if $inset{
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+    }
+    @else{
+        -webkit-box-shadow:$top $left $blur $color ;
+    -moz-box-shadow:$top $left $blur $color ;
+    box-shadow:$top $left $blur $color ;
+    }
+}
+@mixin border-radius($top-left, $top-right,$bottom-right,$bottom-left  ) {   
+        border-radius: $top-left, $top-right,$bottom-right,$bottom-left ;
+    -webkit-border-radius:$top-left, $top-right,$bottom-right,$bottom-left ;
+    -moz-box-shadow:$top-left, $top-right,$bottom-right,$bottom-left ;
+    box-shadow:$top-left, $top-right,$bottom-right,$bottom-left;
+     
+}
+
+@mixin background-image($image,$position:0 0,$repeat:no-repeat,  ){
+    background-image: url($image);
+    background-position: $position;
+    background-repeat: $repeat;
+    
+}
