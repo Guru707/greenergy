@@ -157,6 +157,9 @@ ul, li {
   -moz-transition: 0.3s ease-in-out;
 }
 
+.logo {
+  text-align: center;
+}
 .logo span {
   transition: 0.1s ease-in-out;
   -webkit-transition: 0.1s ease-in-out;
