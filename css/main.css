@@ -373,7 +373,12 @@ ul, li {
   padding: 20px 20px 0px;
   cursor: pointer;
 }
-
+header .logo{
+	width:160px;
+}
+header .logo img{
+	width:100%;
+}
 @media (min-width: 767px) {
   .sidebar-fixed {
     display: none;
