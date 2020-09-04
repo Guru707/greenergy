@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="css/fullpage.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body class="loading">
+        <header id="myHeader" class="header-inner">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white">
+              <div class="container">
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                  aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+                 <a class="navbar-brand logo" href="#"><span class="logo-icon"><img src="images/green-icon.png" ></span><span><img src="images/green.png"></span></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        
+                 
+                  <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul> -->
+                </div>
+                <ul class="header-inner navbar">
+                  <li><a href="cart.html" class="cart_btn text-black"><i class="ti-shopping-cart"></i></a></li>
+           <li><a href="my-order.html" class="text-black"><i class="ti-user"></i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs_wrapper bg-dark-bd">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="text-center">
+                            <h2 class="bd_title">My Order</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb_item">
+                                        <a href="#"><i class="ti-home"></i></a>
+                                    </li>
+                                    <li class="breadcrumb_item">
+                                        <a href="#">My Account</a>
+                                    </li>
+                                    <li class="breadcrumb_item active" aria-current="page">My Order</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- my-order-section -->
+        <section class="gray order-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3">
+                        <nav class="side-list mb-10 mb-md-0">
+                            <!-- mobile-view -->
+                            <div class="dropdown d-none1">
+                                <a class="w-100 p-125em btn btn-secondary dropdown-toggle res-dropdown" href="my-order.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  My Order
+                                </a>
+                                <div class="dropdown-menu res-width bd-clr pt-0" aria-labelledby="dropdownMenuLink">
+                                  <a class="active dropdown-item res-dropdown p-125em border border-bottom" href="order-history.html">Order History</a>
+                                  <a class="dropdown-item p-125em res-dropdown border border-bottom" href="order-tracking.html">Order Tracking</a>
+                                  <a class="dropdown-item p-125em res-dropdown border border-bottom" href="wishlist.html">Wishlist</a>
+                                  <a class="dropdown-item p-125em res-dropdown border border-bottom" href="account-settings.html">Account Settings</a>
+                                  <a class="dropdown-item p-125em res-dropdown border border-bottom" href="payment-methods.html">Paymments Methods</a>
+                                </div>
+                            </div>
+                            <!-- end -->
+                            <div class="list-group list-group-sm list-group-strong list-group-flush-x" id="myDIV">
+                                <a class="list-group-item list-group-item-action active" href="my-order.html">My Order</a>
+                                <a class="list-group-item list-group-item-action dropright-toggle" href="order-history.html">Order History</a>
+                                <a class="list-group-item list-group-item-action dropright-toggle" href="order-tracking.html">Order Tracking</a>
+                                <a class="list-group-item list-group-item-action dropright-toggle" href="wishlist.html">Wishlist</a>
+                                <a class="list-group-item list-group-item-action dropright-toggle" href="account-settings.html">Account Settings</a>
+                                <a class="list-group-item list-group-item-action dropright-toggle" href="payment-methods.html">Payment Methods</a>
+                                <a class="list-group-item list-group-item-action dropright-toggle" href="#">Logout</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-8 col-md-9">
+                        <div class="card-body bg-white mb-4">
+                            <div class="row">
+                                <div class="col-6 col-lg-3">
+                                    <!-- heading -->
+                                    <h6 class="text-muted mb-1">Order No:</h6>
+                                    <!-- text -->
+                                    <p class="mb-lg-0 font-size-sm font-weight-bold txt-clr">65874589</p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <!-- heading -->
+                                    <h6 class="text-muted mb-1">Shipped Date:</h6>
+                                    <!-- text -->
+                                    <p class="mb-lg-0 font-size-sm font-weight-bold txt-clr">10 Jul 2020</p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <!-- heading -->
+                                    <h6 class="text-muted mb-1">Status:</h6>
+                                    <!-- text -->
+                                    <p class="mb-lg-0 font-size-sm font-weight-bold txt-clr">Awaiting Delivery </p>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <!-- heading -->
+                                    <h6 class="text-muted mb-1">Order Amount:</h6>
+                                    <!-- text -->
+                                    <p class="mb-lg-0 font-size-sm font-weight-bold txt-clr">Rs. 200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- order-items -->
+                        <div class="card style-2 mb-4">
+                            <div class="card-header">
+                                <h4 class="mb-0">Order Item 3</h4>
+                            </div>
+                            <div class="card-body">
+                                <ul class="inner-items">
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-4 col-md-3 col-xl-2">
+                                                <a href="#">
+                                                    <img src="images/fruit.png" class="img-fluid"> 
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <p class="mb-2 font-size-sm font-weight-normal">
+                                                    <a style="font-weight: 500;" href="product.html">Fresh Ukkio Pineapple</a> <br>
+                                                    <span style="font-weight: 500;" class="txt-clr2">$80.00</span>
+                                                </p>
+                                                <div class="font-size-sm text-muted">
+                                                    Weight: 2kg <br>
+                                                    Farm: Grocery Food Farm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-4 col-md-3 col-xl-2">
+                                                <a href="#">
+                                                    <img src="images/fruit3.png" class="img-fluid"> 
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <p class="mb-2 font-size-sm font-weight-normal">
+                                                    <a style="font-weight: 500;" href="product.html">Fresh Ukkio Pineapple</a> <br>
+                                                    <span style="font-weight: 500;" class="txt-clr2">$80.00</span>
+                                                </p>
+                                                <div class="font-size-sm text-muted">
+                                                    Weight: 2kg <br>
+                                                    Farm: Grocery Food Farm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row align-items-center">
+                                            <div class="col-4 col-md-3 col-xl-2">
+                                                <a href="#">
+                                                    <img src="images/fruit4.png" class="img-fluid"> 
+                                                </a>
+                                            </div>
+                                            <div class="col">
+                                                <p class="mb-2 font-size-sm font-weight-normal">
+                                                    <a style="font-weight: 500;" href="product.html">Fresh Ukkio Pineapple</a> <br>
+                                                    <span style="font-weight: 500;" class="txt-clr2">$80.00</span>
+                                                </p>
+                                                <div class="font-size-sm text-muted">
+                                                    Weight: 2kg <br>
+                                                    Farm: Grocery Food Farm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- total-items -->
+                        <div class="card style-2 mb-4">
+                            <div class="card-header">
+                                <h4 class="mb-0">Total Order</h4>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
+                                    <li class="list-group-item d-flex px-0">
+                                        <span>Subtotal</span>
+                                        <span class="ml-auto">$140.00</span>
+                                    </li>
+                                
+                                    <li class="list-group-item d-flex px-0">
+                                        <span>Tax</span>
+                                        <span class="ml-auto">$02.00</span>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex px-0">
+                                        <span>Shipping</span>
+                                        <span class="ml-auto">$15.10</span>
+                                    </li>
+                                    
+                                    <li class="list-group-item d-flex font-size-lg font-weight-bold px-0">
+                                        <span class="txt-clr" style="font-weight: 500;">Total</span>
+                                        <span class="ml-auto txt-clr" style="font-weight: 500;">$177.00</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- shipping & billing -->
+                        <div class="card style-2">
+                            <div class="card-header">
+                                <h4 class="mb-0">Shipping &amp; Billing  Details</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <!-- Heading -->
+                                        <p class="mb-2 fnt-weight-5">
+                                          Billing Address:
+                                        </p>
+
+                                        <p class="mb-7 mb-md-0">
+                                          Montreal Market, <br>
+                                          #144 Raccoon Run, <br>
+                                          Mingsio, 548, <br>
+                                          United States, <br>
+                                          58475893
+                                        </p>
+
+                                    </div>
+                                  
+                                    <div class="col-12 col-md-4">
+                                        <!-- Heading -->
+                                        <p class="mb-2 fnt-weight-5">
+                                          Shipping Address:
+                                        </p>
+
+                                        <p class="mb-7 mb-md-0">
+                                          Montreal Market, <br>
+                                          #144 Raccoon Run, <br>
+                                          Mingsio, 548, <br>
+                                          United States, <br>
+                                          58475893
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-4">
+
+                                        <!-- Heading -->
+                                        <p class="mb-2 fnt-weight-5">
+                                          Shipping Method:
+                                        </p>
+
+                                        <p class="mb-4 text-gray-500">
+                                          Standart Shipping <br>
+                                          (5 - 7 days)
+                                        </p>
+
+                                        <!-- Heading -->
+                                        <p class="mb-2 fnt-weight-5">
+                                          Payment Method:
+                                        </p>
+
+                                        <p class="mb-0">
+                                          Debit Mastercard
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end -->
+
+        <!-- java-script -->
+        <script src="js/jquery-min.js"></script>
+        <script src="js/fullpage.js"></script>
+        <script src="js/slim-min.js"></script>
+        <script src="js/popper-min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- end -->
+
+    </body>
+
+</html>
