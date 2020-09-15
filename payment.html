@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="css/fullpage.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body class="loading">
+        <header id="myHeader" class="header-inner">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white">
+              <div class="container">
+               
+                 <a class="navbar-brand logo" href="#"><span class="logo-icon"><img src="images/green-icon.png" ></span><span><img src="images/green.png"></span></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        
+                 
+                  <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul> -->
+                </div>
+                <ul class="header-inner navbar">
+                  <li><a href="cart.html" class="cart_btn text-black"><i class="ti-shopping-cart"></i></a></li>
+           <li><a href="my-order.html" class="text-black"><i class="ti-user"></i></a></li>
+           <li><a href="wallet.html" class="text-black"><i class="ti-wallet"><span style="font-family: Calibri;"> Rs.10.0</span></i></a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        <!-- breadcrumbs -->
+        <div class="breadcrumbs_wrapper bg-dark-bd">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="text-center">
+                            <h2 class="bd_title">Payment Page</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb_item">
+                                        <a href="#"><i class="ti-home"></i></a>
+                                    </li>
+                                    <li class="breadcrumb_item">
+                                        <a href="#">Shop</a>
+                                    </li>
+                                    <li class="breadcrumb_item active" aria-current="page">Payment Page</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- payment-section -->
+        <div class="row ml-0 mr-0">
+      <div class="col-md-9 p-0 ">
+        <div class="cart-product border-bottom border-white ">
+           <form>
+
+                            <!-- Heading -->
+                            <h4 class="mb-5">Billing Details</h4>
+
+                            <!-- Billing details -->
+                            <div class="row mb-5">
+                                <div class="col-12 col-md-6">
+                                    <!-- First Name -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingFirstName" class="text-muted labl-cls">First Name *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingFirstName" type="text" placeholder="First Name" required="">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <!-- Last Name -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingLastName" class="text-muted labl-cls">Last Name *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingLastName" type="text" placeholder="Last Name" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12">
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingEmail" class="text-muted labl-cls">Email *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingEmail" type="email" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12">
+                                    <!-- Company Name -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingCompany" class="text-muted labl-cls">Company name *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingCompany" type="text" placeholder="Company name (optional)">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12">
+                                    <!-- Country -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingCountry" class="text-muted labl-cls">Country *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingCountry" type="text" placeholder="Country" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12">
+                                    <!-- Address Line 1 -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingAddress" class="text-muted labl-cls">Address Line 1 *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingAddress" type="text" placeholder="Address Line 1" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12">
+                                    <!-- Address Line 2 -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingAddressTwo" class="text-muted labl-cls">Address Line 2</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingAddressTwo" type="text" placeholder="Address Line 2 (optional)">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12 col-md-6">
+                                    <!-- Town / City -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingTown" class="text-muted labl-cls">Town / City *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingTown" type="text" placeholder="Town / City" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12 col-md-6">
+                                    <!-- ZIP / Postcode -->
+                                    <div class="form-group">
+                                    <label for="checkoutBillingZIP" class="text-muted labl-cls">ZIP / Postcode *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingZIP" type="text" placeholder="ZIP / Postcode" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="col-12">
+                                    <!-- Mobile Phone -->
+                                    <div class="form-group mb-0">
+                                    <label for="checkoutBillingPhone" class="text-muted labl-cls">Mobile Phone *</label>
+                                    <input class="form-control form-control-sm" id="checkoutBillingPhone" type="tel" placeholder="Mobile Phone" required="">
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <!-- Heading -->
+                            <h4 class="mb-3">Shipping Details</h4>
+
+                            <!-- Shipping details -->
+                            <div class="table-responsive mb-3">
+                                <table class="table3 table-bordered table-sm table-hover mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" id="checkoutShippingStandard" name="shipping" type="radio">
+                                                    <label class="custom-control-label text-muted labl-cls text-body text-nowrap" for="checkoutShippingStandard">Standard Shipping</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted labl-cls">Delivery in 5 - 7 working days</td>
+                                            <td class="text-muted labl-cls">&#x20B9;8.00</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" id="checkoutShippingExpress" name="shipping" type="radio">
+                                                    <label class="custom-control-label text-muted labl-cls text-body text-nowrap" for="checkoutShippingExpress">Express Shipping</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted labl-cls">Delivery in 3 - 5 working days</td>
+                                            <td class="text-muted labl-cls">&#x20B9;12.00</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" id="checkoutShippingShort" name="shipping" type="radio">
+                                                    <label class="text-muted labl-cls custom-control-label text-body text-nowrap" for="checkoutShippingShort">1 - 2 Shipping</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted labl-cls">Delivery in 1 - 2 working days</td>
+                                            <td class="text-muted labl-cls">&#x20B9;18.00</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" id="checkoutShippingFree" name="shipping" type="radio">
+                                                    <label class="text-muted labl-cls custom-control-label text-body text-nowrap" for="checkoutShippingFree">Free Shipping</label>
+                                                </div>
+                                            </td>
+                                            <td class="text-muted labl-cls">Living won't the He one every subdue meat replenish face was you morning firmament darkness.</td>
+                                            <td class="text-muted labl-cls">&#x20B9;0.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="mb-5">
+
+                                <!-- Checkbox -->
+                                <div class="customs-control customs-checkbox">
+                                    <input class="customs-control-input" id="checkoutShippingAddress" type="checkbox">
+                                    <label for="checkoutShippingAddress" class="text-muted labl-cls customs-control-label font-size-sm collapsed" data-toggle="collapse" data-target="#checkoutShippingAddressCollapse">Ship to a different address?</label>
+                                </div>
+
+                                <!-- Collapse -->
+                                <div class="collapse" id="checkoutShippingAddressCollapse" style="">
+                                  <div class="row mt-4">
+                                    <div class="col-12">
+
+                                      <!-- Country -->
+                                      <div class="form-group">
+                                        <label for="checkoutShippingAddressCountry" class="text-muted labl-cls">Country *</label>
+                                        <input class="form-control form-control-sm" id="checkoutShippingAddressCountry" type="text" placeholder="Country">
+                                      </div>
+
+                                    </div>
+                                    <div class="col-12">
+
+                                      <!-- Address Line 1 -->
+                                      <div class="form-group">
+                                        <label for="checkoutShippingAddressLineOne" class="text-muted labl-cls">Address Line 1 *</label>
+                                        <input class="form-control form-control-sm" id="checkoutShippingAddressLineOne" type="text" placeholder="Address Line 1">
+                                      </div>
+
+                                    </div>
+                                    <div class="col-12">
+
+                                      <!-- Address Line 2 -->
+                                      <div class="form-group">
+                                        <label for="checkoutShippingAddressLineTwo" class="text-muted labl-cls">Address Line 2</label>
+                                        <input class="form-control form-control-sm" id="checkoutShippingAddressLineTwo" type="text" placeholder="Address Line 2 (optional)">
+                                      </div>
+
+                                    </div>
+                                    <div class="col-6">
+
+                                      <!-- Town / City -->
+                                      <div class="form-group">
+                                        <label for="checkoutShippingAddressTown" class="text-muted labl-cls">Town / City *</label>
+                                        <input class="form-control form-control-sm" id="checkoutShippingAddressTown" type="text" placeholder="Town / City">
+                                      </div>
+
+                                    </div>
+                                    <div class="col-6">
+
+                                      <!-- Town / City -->
+                                      <div class="form-group">
+                                        <label for="checkoutShippingAddressZIP" class="text-muted labl-cls">ZIP / Postcode *</label>
+                                        <input class="form-control form-control-sm" id="checkoutShippingAddressZIP" type="text" placeholder="ZIP / Postcode">
+                                      </div>
+
+                                    </div>
+                                    <div class="col-12">
+
+                                      <!-- Button -->
+                                      <button class="btn btn-outline-dark" type="submit">
+                                        Save Address
+                                      </button>
+
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Heading -->
+                            <h4 class="mb-3">Payment</h4>
+
+                            <!-- List group -->
+                            <div class="list-group list-group-sm mb-5">
+                                <div class="list-group-item">
+                                    <!-- Radio -->
+                                    <div class="custom-control custom-radio">
+                                        <!-- Input -->
+                                        <input class="custom-control-input" id="checkoutPaymentCard2" name="payment" type="radio" data-toggle="collapse" data-action="show" data-target="#checkoutPaymentCardCollapse2" checked="">
+                                        <!-- Label -->
+                                        <label class="custom-control-label font-size-sm text-body text-nowrap" for="checkoutPaymentCard2">Debit Card <img class="ml-2" src="images/card.png" alt="..."></label>
+                                    </div>
+                                </div>
+                                <div class="list-group-item collapse show py-0" id="checkoutPaymentCardCollapse2">
+
+                                    <!-- Form -->
+                                    <div class="form-row py-5">
+                                        <div class="col-12">
+                                            <div class="form-group mb-4">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;">Card Number</label>
+                                                <input class="form-control form-control-sm" id="checkoutPaymentCardNumber" type="text" placeholder="Card Number *" required="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <div class="form-group mb-4">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">Name on Card</label>
+                                                <input class="form-control form-control-sm" id="checkoutPaymentCardName" type="text" placeholder="Name on Card *" required="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group mb-md-0">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">Month</label>
+                                                <select class="custom-select form-control" id="checkoutPaymentMonth">
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group mb-md-0">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">Year</label>
+                                                    <select class="custom-select form-control" id="checkoutPaymentCardYear">
+                                                    <option>2017</option>
+                                                    <option>2018</option>
+                                                    <option>2019</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group mb-md-0">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">CCV</label>
+                                                <div class="input-group input-group-merge">
+                                                <input class="form-control form-control-sm" id="checkoutPaymentCardCVV" type="text" placeholder="CVV *" required="">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="The CVV Number on your credit card or debit card is a 3 digit number on VISA, MasterCard and Discover branded credit and debit cards." data-original-title="" title="">
+                                                        <i class="ti-help"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="list-group-item">
+                                    <!-- Radio -->
+                                    <div class="custom-control custom-radio">
+                                        <!-- Input -->
+                                        <input class="custom-control-input" id="checkoutPaymentCard" name="payment" type="radio" data-toggle="collapse" data-action="show" data-target="#checkoutPaymentCardCollapse" checked="">
+                                        <!-- Label -->
+                                        <label class="custom-control-label font-size-sm text-body text-nowrap" for="checkoutPaymentCard">Credit Card <img class="ml-2" src="images/card.png" alt="..."></label>
+                                    </div>
+                                </div>
+                                <div class="list-group-item collapse show py-0" id="checkoutPaymentCardCollapse">
+
+                                    <!-- Form -->
+                                    <div class="form-row py-5">
+                                        <div class="col-12">
+                                            <div class="form-group mb-4">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;">Card Number</label>
+                                                <input class="form-control form-control-sm" id="checkoutPaymentCardNumber" type="text" placeholder="Card Number *" required="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <div class="form-group mb-4">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">Name on Card</label>
+                                                <input class="form-control form-control-sm" id="checkoutPaymentCardName" type="text" placeholder="Name on Card *" required="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group mb-md-0">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">Month</label>
+                                                <select class="custom-select form-control" id="checkoutPaymentMonth">
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group mb-md-0">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">Year</label>
+                                                    <select class="custom-select form-control" id="checkoutPaymentCardYear">
+                                                    <option>2017</option>
+                                                    <option>2018</option>
+                                                    <option>2019</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group mb-md-0">
+                                                <label class="bold-simple text-muted" style="font-weight: 800;"">CCV</label>
+                                                <div class="input-group input-group-merge">
+                                                <input class="form-control form-control-sm" id="checkoutPaymentCardCVV" type="text" placeholder="CVV *" required="">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="The CVV Number on your credit card or debit card is a 3 digit number on VISA, MasterCard and Discover branded credit and debit cards." data-original-title="" title="">
+                                                        <i class="ti-help"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            
+                                <div class="list-group-item">
+                                    <!-- Radio -->
+                                    <div class="custom-control custom-radio">
+                                        <!-- Input -->
+                                        <input class="custom-control-input" id="checkoutPaymentPaypal" name="payment" type="radio" data-toggle="collapse" data-action="hide" data-target="#checkoutPaymentCardCollapse">
+                                        <!-- Label -->
+                                        <label class="custom-control-label font-size-sm text-body text-nowrap" for="checkoutPaymentPaypal"><img src="images/paytm.png" alt="..."></label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Notes -->
+                            <textarea class="text-muted form-control form-control-sm mb-9 mb-md-0 font-size-xs" rows="5" placeholder="Order Notes (optional)"></textarea>
+
+                        </form>
+        </div>
+        <!-- cart-product end -->
+      </div>
+      <!-- col-md-8 -->
+      <div class="col-md-3 p-0 d-none  d-md-block d-lg-block">
+        <div class="sidebar_widegs pt-5 p-3 ">
+          <h4 class="pb-3 h2 font-700">Amount</h4>
+          <ul class="cart-price">
+            <li class="cart-list">Sub Total<span class="ml-auto">Rs 196/-</span></li>
+            <li class="cart-list">Shipping<span class="ml-auto">Rs 50/-</span></li>
+            <li class="cart-list">Your Wallet<span class="ml-auto">Rs 50/-</span></li>
+            <li class="cart-list">Promocode<span class="ml-auto"><input type="text" placeholder="Enter Code" minlength="4" maxlength="6" class="border-0"></span></li>
+
+          </ul>
+          <ul class="cart-price">
+            <li class="cart-list text-dark-gray font-700 ">Cart Total<span class="ml-auto">Rs 246/-</span></li>
+           <!--  <li class="cart-list"><button class="btn neumo btn-block "><span class="rounded-pill p-2">Checkout</span></button></li> -->
+          </ul>
+          <a class="btn2 text-center btn-block btn-dark mb-2" href="#">Proceed to Checkout</a>
+                        <a class="px-0 text-body text-muted" href="#"><i class="ti-back-left mr-2"></i> Continue Shopping</a>
+        </div>
+		<div class=" p-0 sidebar-fixed">
+        <div class="arrow-element"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <div class="sidebar_widegs pt-5 p-3">
+          <h4 class="pb-3 h2 font-700">Amount</h4>
+          <ul class="cart-price">
+            <li class="cart-list">Sub Total<span class="ml-auto">Rs 196/-</span></li>
+            <li class="cart-list">Shipping<span class="ml-auto">Rs 50/-</span></li>
+            <li class="cart-list">Your Wallet<span class="ml-auto">Rs 50/-</span></li>
+            <li class="cart-list">Promocode<span class="ml-auto"><input type="text" placeholder="Enter Code" minlength="4" maxlength="6" class="border-0"></span></li>
+
+          </ul>
+          <ul class="cart-price">
+            <li class="cart-list text-dark-gray font-700 ">Cart Total<span class="ml-auto">Rs 246/-</span></li>
+           <!--  <li class="cart-list"><button class="btn neumo btn-block "><span class="rounded-pill p-2">Checkout</span></button></li> -->
+          </ul>
+          <a class="btn2 text-center btn-block btn-dark mb-2" href="#">Proceed to Checkout</a>
+                        <a class="px-0 text-body text-muted" href="#"><i class="ti-back-left mr-2"></i> Continue Shopping</a>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+       
+        <!-- end -->
+
+        <!-- java-script -->
+        <script src="js/jquery-min.js"></script>
+        <script src="js/fullpage.js"></script>
+        <script src="js/slim-min.js"></script>
+        <script src="js/popper-min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- end -->
+
+    </body>
+
+</html>
